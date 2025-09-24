@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مركز الأبرز الإستشاري للعلاج الطبيعي</title>
-  <meta name="description" content="مركز الأبرز الإستشاري للعلاج الطبيعي في إربد: علاج وتأهيل الإصابات الرياضية، خشونة المفاصل، الديسك، والتأهيل العصبي. تواصل الآن.">
+  <title>مركز الأبرز للعلاج الطبيعي في إربد | علاج وتأهيل</title>
+  <meta name="description" content="مركز الأبرز للعلاج الطبيعي في إربد: علاج الإصابات الرياضية، خشونة المفاصل، الديسك، والتأهيل العصبي. اتصل الآن 0797383239.">
   <link rel="canonical" href="https://mohamad-alshlool03.github.io/scc/">
   <meta property="og:title" content="مركز الأبرز الإستشاري للعلاج الطبيعي">
   <meta property="og:description" content="علاج وتأهيل بإشراف مختصين في إربد. اتصل أو تواصل عبر واتساب.">
@@ -17,26 +17,12 @@
   <meta name="theme-color" content="#009fe3">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
-  <!-- CSP معدّلة للسماح بالـ inline الضروري فقط -->
-  <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self';
-                 img-src 'self' https: data:;
-                 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-                 font-src  'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
-                 script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
-                 connect-src 'self';
-                 object-src 'none';
-                 frame-src 'none';
-                 manifest-src 'self';
-                 frame-ancestors 'none';
-                 base-uri 'self';
-                 upgrade-insecure-requests">
-
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- وزن خط واحد 600 لسرعة أعلى -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome (اختياري للأيقونات) + SRI -->
+  <!-- Font Awesome (CSS فقط) -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -44,19 +30,21 @@
 
   <link rel="icon" href="icons/favicon.png" type="image/png">
 
-  <!-- ========== CSS خاص بالصفحة الرئيسية فقط ========== -->
+  <!-- ========== CSS الصفحة الرئيسية ========== -->
   <style>
 /* متغيرات الثيم */
 :root{
   --brand:#009fe3; --brand-2:#2c7a7b;
   --bg:#0f172a0a;
-  --card:#ffffff; --text:#1f2937; --muted:#4a5568; --line:#e2e8f0;
+  --card:#ffffff; --text:#1f2937; --muted:#334155; /* تباين أعلى */
+  --line:#e2e8f0;
   --pill-bg:#e9f6ff; --pill-border:#cfe9fb; --pill-text:#0f3b59;
   --hero-text:#ffffff; --btn-top:#0ea5e9; --btn-top-hover:#0284c7;
 }
 body.theme-dark{
   --bg:#0b1324;
-  --card:#0f172a; --text:#e2e8f0; --muted:#cbd5e1; --line:#1f2937;
+  --card:#0f172a; --text:#e2e8f0; --muted:#d1e4ff;
+  --line:#1f2937;
   --pill-bg:#0b2940; --pill-border:#1e3a5f; --pill-text:#dbeafe;
   --hero-text:#e5f2ff; --btn-top:#38bdf8; --btn-top-hover:#0ea5e9;
 }
@@ -82,7 +70,7 @@ header{
   background:linear-gradient(135deg,var(--brand),var(--brand-2));
   padding:64px 20px 96px;
 }
-header h1{font-size:2.7rem; font-weight:700}
+header h1{font-size:2.7rem; font-weight:600}
 header p{font-size:1.15rem; opacity:.95; margin-top:8px}
 .theme-toggle{
   position:absolute; top:14px; left:14px; width:40px; height:40px; border:none; border-radius:50%;
@@ -97,7 +85,7 @@ header .wave path{ fill:var(--card) }
 
 /* CTA */
 .cta{ margin-top:20px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap }
-.btn{ display:inline-flex; align-items:center; gap:8px; border:none; border-radius:12px; cursor:pointer; padding:14px 20px; font-size:1rem; font-weight:800; text-decoration:none; color:#fff; transition:.2s ease; outline:none; box-shadow:0 8px 20px rgba(0,0,0,.12) }
+.btn{ display:inline-flex; align-items:center; gap:8px; border:none; border-radius:12px; cursor:pointer; padding:14px 20px; font-size:1rem; font-weight:600; text-decoration:none; color:#fff; transition:.2s ease; outline:none; box-shadow:0 8px 20px rgba(0,0,0,.12) }
 .btn:hover{ transform:translateY(-2px) }
 .btn-call{ background:var(--btn-top) } .btn-call:hover{ background:var(--btn-top-hover) }
 .btn-wa{ background:#16a34a } .btn-wa:hover{ background:#15803d }
@@ -109,8 +97,8 @@ header .wave path{ fill:var(--card) }
 .contact-card i{ background:#009fe3; color:#fff; border-radius:50%; width:64px; height:64px; display:inline-flex; align-items:center; justify-content:center; margin-bottom:14px; font-size:1.6rem }
 body.theme-dark .contact-card i{ background:#0ea5e9 }
 .contact-card h3{font-size:1.1rem; color:var(--text); margin-bottom:8px}
-.pill{ display:flex; align-items:center; gap:8px; background:var(--pill-bg); border:1px solid var(--pill-border); color:var(--pill-text); padding:10px 12px; border-radius:10px; text-decoration:none; font-weight:700; width:100%; white-space:nowrap; direction:ltr; unicode-bidi:plaintext }
-.contact-card a.link, .contact-card button.link{ color:#009fe3; text-decoration:none; font-weight:700; background:none; border:none; padding:0; cursor:pointer }
+.pill{ display:flex; align-items:center; gap:8px; background:var(--pill-bg); border:1px solid var(--pill-border); color:var(--pill-text); padding:10px 12px; border-radius:10px; text-decoration:none; font-weight:600; width:100%; white-space:nowrap; direction:ltr; unicode-bidi:plaintext }
+.contact-card a.link, .contact-card button.link{ color:#009fe3; text-decoration:none; font-weight:600; background:none; border:none; padding:0; cursor:pointer }
 .contact-card a.link:hover, .contact-card button.link:hover{ text-decoration:underline }
 
 /* الخدمات */
@@ -145,25 +133,42 @@ body.theme-dark .location-card i{ color:#0ea5e9 }
 
 /* الفوتر */
 footer{ background:#2d3748; color:#fff; text-align:center; padding:26px 18px; font-size:.95rem }
-.footer-dev{ margin-top:10px; font-weight:800; font-size:1.2rem; color:#ffd54a }
-.footer-phone{ margin-top:6px; font-size:1.2rem; font-weight:800 }
+.footer-dev{ margin-top:10px; font-weight:600; font-size:1.2rem; color:#ffd54a }
+.footer-actions{ margin-top:10px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap }
+.footer-actions .btn{ padding:10px 14px; border-radius:10px; font-size:1rem }
+.footer-actions .btn-outline{ background:transparent; color:#fff; border:2px solid rgba(255,255,255,.85) }
+.footer-actions .btn-outline:hover{ background:rgba(255,255,255,.12) }
+.footer-phone{ margin-top:6px; font-size:1.1rem; font-weight:600 }
 .footer-phone a{
   color:#fff; background:#0ea5e9; padding:6px 12px; border-radius:10px;
   text-decoration:none; display:inline-block;
 }
 .footer-phone a:hover{ background:#0284c7 }
+.footer-wa a{
+  display:inline-flex; align-items:center; gap:8px;
+  background:#25d366; color:#fff; padding:6px 12px; border-radius:10px; text-decoration:none; font-weight:600;
+}
+.footer-wa a:hover{ background:#1ebe5d }
 
 /* أزرار ثابتة */
 .fab-wa{ position:fixed; z-index:999; right:16px; bottom:16px; width:56px; height:56px; border-radius:50%; background:#25d366; color:#fff; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(0,0,0,.2); text-decoration:none }
 .fab-wa i{ font-size:1.6rem }
 #toTop{ position:fixed; right:16px; bottom:84px; width:44px; height:44px; border:none; border-radius:50%; background:#0ea5e9; color:#fff; display:none; align-items:center; justify-content:center; cursor:pointer; box-shadow:0 8px 24px rgba(0,0,0,.18); z-index:999 }
 #toTop.show{ display:flex }
+
+/* شريط اتصال ثابت للموبايل */
+.sticky-call{
+  position:fixed; left:12px; right:12px; bottom:12px; z-index:1000;
+  text-align:center; padding:14px; border-radius:12px; font-weight:600;
+  background:#16a34a; color:#fff; text-decoration:none; box-shadow:0 8px 24px rgba(0,0,0,.2);
+}
+@media(min-width:768px){ .sticky-call{ display:none } }
   </style>
 </head>
 <body class="theme-dark">
   <div class="container">
     <header>
-      <!-- زر الثيم فقط -->
+      <!-- زر الثيم -->
       <button id="themeToggle" class="theme-toggle" aria-label="تبديل الثيم" title="تبديل الثيم">
         <i class="fas fa-moon" aria-hidden="true"></i>
       </button>
@@ -246,7 +251,11 @@ footer{ background:#2d3748; color:#fff; text-align:center; padding:26px 18px; fo
     <footer>
       <div>© 2025 مركز الأبرز الإستشاري للعلاج الطبيعي - جميع الحقوق محفوظة</div>
       <div class="footer-dev">تم التطوير من قبل <strong>محمد الشلول</strong></div>
-      <div class="footer-phone"><a href="tel:+962790986908" aria-label="اتصال بالمطور 0790986908">0790986908</a></div>
+
+      <!-- أزرار تحت اسم المطوّر: تواصل (contact.html) + الرقم كما هو + واتساب المطوّر -->
+      <div class="footer-actions">
+        <div class="footer-wa"><a href="https://wa.me/962790986908" target="_blank" rel="noopener" aria-label="واتساب المطوّر"><i class="fab fa-whatsapp"></i> واتساب المطوّر</a></div>
+      </div>
     </footer>
   </div>
 
@@ -255,12 +264,10 @@ footer{ background:#2d3748; color:#fff; text-align:center; padding:26px 18px; fo
 
   <button id="toTop" aria-label="الرجوع للأعلى"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
 
-  <!-- Font Awesome JS (اختياري) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-          integrity="sha512-r2cV8oP4n5o1Rkzd2t8m9Z1aX1s6gVtFz0uG3qHf5KQfFh2b+2b8mJm8QpH2W2f0Qe3uRj0eJb1bYp1s7vCq3g=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <!-- شريط اتصال ثابت للموبايل -->
+  <a href="tel:+962797383239" class="sticky-call" aria-label="اتصال سريع">اتصال سريع</a>
 
-  <!-- سكربت بسيط للصفحة الرئيسية فقط -->
+  <!-- سكربت بسيط -->
   <script>
     (function () {
       const toTopBtn = document.getElementById('toTop');
@@ -273,7 +280,18 @@ footer{ background:#2d3748; color:#fff; text-align:center; padding:26px 18px; fo
       });
       toTopBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-      // نسخ رقم الهاتف
+      // نسخ رقم الهاتف + Toast
+      function showToast(msg){
+        const toast=document.createElement('div');
+        toast.textContent=msg;
+        Object.assign(toast.style,{
+          position:'fixed',bottom:'20px',right:'20px',
+          background:'#0ea5e9',color:'#fff',padding:'10px 14px',
+          borderRadius:'10px',zIndex:'2000',boxShadow:'0 6px 18px rgba(0,0,0,.18)'
+        });
+        document.body.appendChild(toast);
+        setTimeout(()=>toast.remove(),1500);
+      }
       copyBtn.addEventListener('click', async function () {
         const phone = '+962797383239';
         try {
@@ -283,8 +301,8 @@ footer{ background:#2d3748; color:#fff; text-align:center; padding:26px 18px; fo
             const ta = document.createElement('textarea');
             ta.value = phone; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
           }
-          alert('تم نسخ الرقم.');
-        } catch { alert('تعذر نسخ الرقم، انسخه يدويًا: ' + phone); }
+          showToast('تم نسخ الرقم');
+        } catch { showToast('تعذر نسخ الرقم'); }
       });
 
       // خرائط جوجل
